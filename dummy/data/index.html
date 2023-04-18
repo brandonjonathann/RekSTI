@@ -1,10 +1,4 @@
 <!DOCTYPE HTML><html>
-<!-- Rui Santos - Complete project details at https://RandomNerdTutorials.com
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files.
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software. -->
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://code.highcharts.com/highcharts.js"></script>
@@ -54,7 +48,6 @@ setInterval(function ( ) {
     if (this.readyState == 4 && this.status == 200) {
       var x = (new Date()).getTime(),
           y = parseFloat(this.responseText);
-      //console.log(this.responseText);
       if(chartT.series[0].data.length > 40) {
         chartT.series[0].addPoint([x, y], true, true, true);
       } else {
